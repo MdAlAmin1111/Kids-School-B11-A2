@@ -140,63 +140,207 @@
 
 .curriculum-card-1,
 .curriculum-card-2,
-.curriculum-card-3{
+.curriculum-card-3 {
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
     border-radius: 18px;
     width: 23rem;
     height: 30rem;
-    box-shadow: 0px 0px 28.3px rgba(0, 0, 0, 0.05) ;
+    box-shadow: 0px 0px 28.3px rgba(0, 0, 0, 0.05);
     padding: 2.5rem;
 }
 
-.curriculum-card-1 { 
+.curriculum-card-1 {
     background: linear-gradient(to bottom, #DEF5FF 0%, #FFFFFF 40%);
 }
-.curriculum-card-2 { 
+
+.curriculum-card-2 {
     background: linear-gradient(to bottom, #FFF4DC 0%, #FFFFFF 40%);
 }
-.curriculum-card-3 { 
+
+.curriculum-card-3 {
     background: linear-gradient(to bottom, #EEE1FF 0%, #FFFFFF 40%);
 }
-.curriculum-card-title{
+
+.curriculum-card-title {
     font-size: 1.5rem;
     font-weight: 700;
     color: rgba(32, 32, 32, 1);
 }
-.curriculum-card-description{
+
+.curriculum-card-description {
     font-size: 1rem;
     font-weight: 500;
     color: rgba(128, 128, 128, 1);
     line-height: 1.8rem;
 }
+
 .curriculum-card-read-1,
-.curriculum-card-read-2
-.curriculum-card-read-3{
+.curriculum-card-read-2 .curriculum-card-read-3 {
     font-size: 1rem;
     font-weight: 700;
 
 }
-.curriculum-card-read-1{
+
+.curriculum-card-read-1 {
     color: rgba(100, 200, 255, 1);
 }
-.curriculum-card-read-2{
+
+.curriculum-card-read-2 {
     color: rgba(240, 170, 0, 1);
 }
-.curriculum-card-read-3{
+
+.curriculum-card-read-3 {
     color: rgba(135, 0, 255, 1);
 }
-.curriculum-image{
+
+.curriculum-image {
     justify-content: center;
     gap: 0.625rem;
 }
-.curriculum-image div{
+
+.curriculum-image div {
     padding: 1rem;
     border-radius: 50%;
     background-color: orange;
 }
 
+/* stories-section styles */
+.stories-section {
+    background: linear-gradient(to top, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3)), url(../assets/bg.png);
+    padding: 3.75rem 0;
+}
+
+.stories-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+}
+
+.story-card-1,
+.story-card-2,
+.story-card-3,
+.story-card-4,
+.story-card-5 {
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.story-card-1 {
+    grid-area: card-1;
+}
+
+.story-card-2 {
+    grid-area: card-2;
+}
+
+.story-card-3 {
+    grid-area: card-3;
+}
+
+.story-card-4 {
+    grid-area: card-4;
+}
+
+.story-card-5 {
+    grid-area: card-5;
+}
+
+.stories-cards {
+    display: grid;
+    grid-template-areas:
+        "card-1 card-2 card-3"
+        "card-1 card-4 card-5";
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 1.25rem;
+    padding: 5rem 0;
+
+}
+
+.stories-cards img {
+    width: 100%;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.story-card-content {
+    padding: 1rem;
+}
+
+.story-card-date {
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 2rem;
+}
+
+.story-card-date span {
+    padding: 1rem 1.25rem;
+    border-radius: 3rem;
+
+}
+
+#date-1 {
+    background-color: rgba(60, 216, 232, 1);
+    position: relative;
+    top: -2rem;
+}
+
+#date-2 {
+    background-color: rgba(149, 178, 38, 1);
+    position: relative;
+    top: -2rem;
+}
+
+#date-3 {
+    background-color: rgba(93, 88, 240, 1);
+    position: relative;
+    top: -2rem;
+}
+
+#date-4 {
+    background-color: rgba(149, 178, 38, 1);
+    position: relative;
+    top: -2rem;
+}
+
+#date-5 {
+    background-color: rgba(149, 178, 38, 1);
+    position: relative;
+    top: -2rem;
+}
+
+.story-card-title {
+    font-size: 1rem;
+}
+
+.story-card-1 .story-card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 3rem 0;
+}
+
+.story-card-description {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: rgba(102, 102, 102, 1);
+}
+
+.stories-button {
+    text-align: center;
+}
+
+.stories-button button {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    border-radius: 0.75rem;
+    padding: 0.625rem 3.75rem;
+    border: none;
+}
 
 /* mobile device style */
 
@@ -247,11 +391,12 @@
     }
 
     /* curriculum section styles */
-    .curriculum-cards{
+    .curriculum-cards {
         flex-direction: column;
         align-items: center;
     }
-    .curriculum-image{
+
+    .curriculum-image {
         display: none;
     }
 
