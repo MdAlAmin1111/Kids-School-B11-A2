@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand-font {
+  font-family: "Quicksand", serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* shared styles */
+.display-flex{
+    display: flex;
+}
+
+/* header section styles */
+
+/* navbar styles */
+.navbar{
+    max-width: 1160px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 0;
+}
+.logo-site-name{
+    align-items: center;
+}
+.site-name{
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem 0.7rem;
+}
+.nav-menu{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.menu-item-1 a{
+    color: rgba(254, 163, 1, 1);
+}
+.menu-item-2 a{
+    color: rgba(1, 172, 253, 1);
+}
+.menu-item-3 a{
+    color: rgba(5, 212, 223, 1);
+}
+.menu-item-4 a{
+    color: rgba(93, 88, 239, 1);
+}
+.nav-menu a{
+    text-decoration: none;
+}
+.nav-button{
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: none;
+    background-color: rgba(254, 163, 1, 1);
+    padding: 0.63rem 3.75rem;
+    color: white;
+    border-radius: 12px;
+}
+
+.icon-container{
+    display: none;
+}
+
+
+/* mobile device style */
+
+@media screen and (max-width: 576px){
+    .navbar{
+        padding: 0.75rem 1rem;
+        border: 0.5px solid rgba(254, 163, 1, 1);
+    }
+    .site-name{
+        display: none;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .button-container{
+        display: none;
+    }
+    .icon-container{
+        display: block;
+    }
+    .after-nav-hr{
+        display: block;
+        color: rgba(254, 163, 1, 1);
+    }
+
+}
