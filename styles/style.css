@@ -13,7 +13,10 @@
 .display-flex{
     display: flex;
 }
-
+.primary-width{
+    max-width: 1160px;
+    margin: 0 auto;
+}
 /* header section styles */
 
 /* navbar styles */
@@ -68,12 +71,44 @@
     display: none;
 }
 
+/* banner section styles */
+.banner{
+    align-items: center;
+    gap: 3rem;
+}
+.banner-content-title{
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+#empowering{
+    color: orange;
+}
+#vision{
+    color: rgba(1, 172, 253, 1)
+}
+.banner-content-description{
+    font-size: 1.25rem;
+    color: black;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+.banner-content-button button{
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 0.625rem 3rem;
+    border-radius: 12px;
+    border: none;
+    background-color: black;
+    color: white;
+}
 
 /* mobile device style */
 
 @media screen and (max-width: 576px){
+    /* navbar style */
     .navbar{
-        padding: 0.75rem 1rem;
+        padding: 0.5rem 1rem;
         border: 0.5px solid rgba(254, 163, 1, 1);
     }
     .site-name{
@@ -92,5 +127,20 @@
         display: block;
         color: rgba(254, 163, 1, 1);
     }
+    /* banner style */
+    .banner{
+        flex-direction: column;
+        gap: 1.25rem;
+        padding: 0.5rem 1rem;
+    }
+    .banner-content{
+        text-align: center;
+        order: 1;
+
+    }
+    .banner-image img{
+        width: 100%;
+    }
+
 
 }
