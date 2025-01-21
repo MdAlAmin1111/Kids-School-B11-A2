@@ -342,6 +342,65 @@
     border: none;
 }
 
+/* footer section styles */
+footer{
+    background-color: rgba(1, 172, 253, 1);
+    padding-top: 7.5rem;
+    padding-bottom: 8rem;
+}
+.footer-content{
+    justify-content: space-between;
+    gap: 10rem;
+}
+#footer-image-title{
+    display: flex;
+    gap: 2.75rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.footer-section-1 img{
+    width: 5.5rem;
+    background-color: white;
+}
+.footer-section-1 h3{
+    font-size: 2.625rem;
+    color: white;
+    font-weight: 700;
+}
+.footer-section-1 p{
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: white;
+}
+.footer-section-2 p{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 2rem;
+}
+/* .footer-section-2 ul{
+    list-style-type: none;
+} */
+.footer-section-2 li{
+    list-style-type: none;
+    margin-bottom: 1.25rem;
+}
+.footer-section-2 a{
+   text-decoration: none;
+   font-size: 1.25rem;
+   font-weight: 500;
+   color: white;
+}
+.footer-section-3 p{
+    font-size: 1.625rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 2rem;
+}
+.footer-section-3 img{
+    margin-right: 0.625rem;
+}
+
 /* mobile device style */
 
 @media screen and (max-width: 576px) {
@@ -421,6 +480,18 @@
         grid-template-columns:auto;
         gap: 1.25rem;    
     }
+    /* footer styles */
+    footer{
+        padding: 2.5rem 0;
+    }
+    .footer-content{
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1.25rem;
+    }
+    #footer-image-title{
+        gap: 0.6rem;
+    }
 
 }
 /* medium device styles */
@@ -487,4 +558,19 @@
         padding: 0.5rem 1rem;
         margin: 1rem;
     }
+        /* footer styles */
+        footer{
+            padding: 2.5rem 0;
+            text-align: center;
+        }
+        .footer-content{
+            flex-direction: column;
+            gap: 2rem;
+            padding: 1.25rem;
+        }
+        #footer-image-title{
+            flex-direction: column;
+            justify-content: center;
+            gap: 0.6rem;
+        }
 }
