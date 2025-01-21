@@ -343,61 +343,69 @@
 }
 
 /* footer section styles */
-footer{
+footer {
     background-color: rgba(1, 172, 253, 1);
     padding-top: 7.5rem;
     padding-bottom: 8rem;
 }
-.footer-content{
+
+.footer-content {
     justify-content: space-between;
     gap: 10rem;
 }
-#footer-image-title{
+
+#footer-image-title {
     display: flex;
-    gap: 2.75rem;
+    gap: 2rem;
     align-items: center;
     margin-bottom: 2rem;
 }
-.footer-section-1 img{
+
+.footer-section-1 img {
     width: 5.5rem;
-    background-color: white;
+    /* background-color: white; */
+    /* background-clip: content-box; */
 }
-.footer-section-1 h3{
+
+.footer-section-1 h3 {
     font-size: 2.625rem;
     color: white;
     font-weight: 700;
 }
-.footer-section-1 p{
+
+.footer-section-1 p {
     font-size: 1.25rem;
     font-weight: 400;
     color: white;
+    margin-left: 2rem;
 }
-.footer-section-2 p{
+
+.footer-section-2 p {
     font-size: 1.5rem;
     font-weight: 700;
     color: white;
     margin-bottom: 2rem;
 }
-/* .footer-section-2 ul{
-    list-style-type: none;
-} */
-.footer-section-2 li{
+.footer-section-2 li {
     list-style-type: none;
     margin-bottom: 1.25rem;
 }
-.footer-section-2 a{
-   text-decoration: none;
-   font-size: 1.25rem;
-   font-weight: 500;
-   color: white;
+
+.footer-section-2 a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: white;
 }
-.footer-section-3 p{
+
+.footer-section-3 p {
     font-size: 1.625rem;
     font-weight: 700;
     color: white;
     margin-bottom: 2rem;
 }
-.footer-section-3 img{
+
+.footer-section-3 img {
     margin-right: 0.625rem;
 }
 
@@ -460,40 +468,50 @@ footer{
     }
 
     /* stories section style */
-    .stories-section{
+    .stories-section {
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
-    .stories-container{
+
+    .stories-container {
         padding: 0.5rem 1rem;
         margin: 1rem;
     }
+
     .story-card-1 {
         display: none;
     }
+
     .stories-cards {
         grid-template-areas:
             "card-2"
             "card-3"
             "card-4"
             "card-5";
-        grid-template-columns:auto;
-        gap: 1.25rem;    
+        grid-template-columns: auto;
+        gap: 1.25rem;
     }
+
     /* footer styles */
-    footer{
+    footer {
         padding: 2.5rem 0;
     }
-    .footer-content{
+
+    .footer-content {
         flex-direction: column;
         gap: 2rem;
         padding: 1.25rem;
     }
-    #footer-image-title{
+
+    #footer-image-title {
         gap: 0.6rem;
+    }
+    .footer-section-1 p {
+        margin-left: 0;
     }
 
 }
+
 /* medium device styles */
 @media screen and (min-width: 576px) and (max-width:992px) {
     .navbar {
@@ -521,6 +539,7 @@ footer{
         display: block;
         color: rgba(254, 163, 1, 1);
     }
+
     .banner {
         flex-direction: column;
         gap: 1.25rem;
@@ -536,6 +555,7 @@ footer{
     .banner-image img {
         width: 100%;
     }
+
     .curriculum-cards {
         flex-direction: column;
         align-items: center;
@@ -544,33 +564,39 @@ footer{
     .curriculum-image {
         display: none;
     }
+
     .story-card-1 {
         display: none;
     }
+
     .stories-cards {
         grid-template-areas:
             "card-2 card-3"
             "card-4 card-5";
-        grid-template-columns:auto auto;
-        gap: 1.25rem;    
+        grid-template-columns: auto auto;
+        gap: 1.25rem;
     }
-    .stories-container{
+
+    .stories-container {
         padding: 0.5rem 1rem;
         margin: 1rem;
     }
-        /* footer styles */
-        footer{
-            padding: 2.5rem 0;
-            text-align: center;
-        }
-        .footer-content{
-            flex-direction: column;
-            gap: 2rem;
-            padding: 1.25rem;
-        }
-        #footer-image-title{
-            flex-direction: column;
-            justify-content: center;
-            gap: 0.6rem;
-        }
+
+    /* footer styles */
+    footer {
+        padding: 2.5rem 0;
+        text-align: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1.25rem;
+    }
+
+    #footer-image-title {
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.6rem;
+    }
 }
